@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Login - Explore the World</title>
+    <style>
+        body {
+            font-family: 'EB Garamond', serif;
+            font-size: 18px;
+            color: white; 
+            background-color: #2C3E50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: white; 
+            margin-top: 50px;
+        }
+
+       
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        label {
+            font-size: 16px;
+            color: #ECF0F1; 
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: solid ;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #1A5276; 
+            color: white;
+            padding: 10px ;
+            border: solid;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        a {
+            color: #BDC3C7;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Login to Your Account</h2>
+    <form action="/login" method="post">
+        <table>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" id="username" name="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Login">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <p>Don't have an account? <a href="registration.html" target="content">Register here</a>.</p>
+</body>
+</html>
+
+
+
+
+
+
