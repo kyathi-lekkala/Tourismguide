@@ -6,7 +6,9 @@
             font-family: 'EB Garamond', serif;
             font-size: 18px;
             color: white;
-            background-color: #34495E;
+            
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -35,18 +37,29 @@
         }
 
         a {
-            color: grey;
+            color: yellow;
             font-weight: bold;
         }
 
- 
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:  #1A5276;
+            border-radius: 10px;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Your Cart</h1>
-    <p>No items in your cart yet. Start exploring and add flights to your cart!</p>
+    <div class="container">
+        <h1>Your Cart</h1>
+        <p>No items in your cart yet. Start exploring and add flights to your cart!</p>
 
-    <h2>How to Add Flights to Cart?</h2>
-    <p>Go to the <a href="catalogue.html" target="content">Catalogue</a> and select flights to book.</p>
+        <h2>How to Add Flights to Cart?</h2>
+        <p>Go to the <a href="catalogue.html" target="content">Catalogue</a> and select flights to book.</p>
+    </div>
 </body>
 </html>
+

@@ -9,93 +9,129 @@
             background-color: #2C3E50; 
             margin: 0;
         }
-        table {
-            border-spacing: 0;
+        .container {
             width: 100%;
         }
 
-        td {
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #1A5276; 
             padding: 5px;
-            border: solid; 
-            background-color: #34495E; 
-            text-align: center;
         }
 
-        h1 {
-            font-size: 40px;
-            color: white;
-            background-color: #1A5276; 
-            text-align: center;
-            padding: 5px;
+        .logo {
+            width: 15%;
+        }
+
+        .logo img {
+            display: block;
+            width: 100%; 
             margin: 0;
         }
 
-        a {
+        .header h1 {
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 5px;
+            flex-grow: 1; 
+            background-color: #34495E;
+        }
+
+        .navigation {
+            background-color: #34495E;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px ;
+        }
+
+        .navigation a {
             font-size: 18px;
-            color: #ECF0F1; 
+            color: #ECF0F1;
             text-align: center;
             text-decoration: none;
             display: block;
-            padding: 5px;
+            padding: 10px;
             border-radius: 5px;
-            background-color: #5D6D7E; 
+            background-color: #5D6D7E;
         }
 
-       
-        img {
+        .content {
+            display: flex;
+            padding: 5px;
+            
+        }
+
+        .services {
+            background-color: #34495E;
+            width: 20%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap:18px;
+        }
+
+        .services a {
+            color: #ECF0F1;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 5px;
             display: block;
-            width: 100%; 
-            margin: 0 ;
+            border-radius: 5px;
+            background-color: #5D6D7E;
+            text-align: center;
         }
 
+        .iframe-container {
+            flex-grow: 1;
+            background-color: #2C3E50;
+            padding: 5px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
 <body>
-    <table height="20%"> 
-        <tr> 
-            <td class="logo" width="15%">
+    <div class="container">
+        <div class="header">
+            <div class="logo">
                 <img src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148627268.jpg" alt="Travel Logo">
-            </td>
-            <td class="header">
-                <h1>Explore the World - Your Travel & Tourism Guide</h1>
-            </td>
-        </tr>
-    </table>
-    <table height="15%" class="navigation">
-        <tr>
-            <td width=16%><a href="home.html" target="content">Home</a></td>
-            <td width=16%><a href="login.html" target="content">Login</a></td>
-            <td width=16%><a href="registration.html" target="content">Registration</a></td>
-            <td width=16%><a href="catalogue.html" target="content">Catalogue</a></td>
-            <td width=16%><a href="cart.html" target="content">Cart</a></td>
-            <td width=16%><a href="contact.html" target="content">Contact Us</a></td>
-        </tr>
-    </table>
-    <table height="65%">
-        <tr>
-            <td class="services" width="20%" valign="top">
-                <table>
-                    <tr><td><a href="service1.html" target="content">Travel Insurance</a></td></tr>
-                    <tr><td><a href="service2.html" target="content">Car Rentals</a></td></tr>
-                    <tr><td><a href="service3.html" target="content">Visa Assistance</a></td></tr>
-                    <tr><td><a href="service4.html" target="content">Holiday Packages</a></td></tr>
-                    <tr><td><a href="service5.html" target="content">Flight Booking</a></td></tr>
-                    <tr><td><a href="service6.html" target="content">Hotel Reservations</a></td></tr>
-                    <tr><td><a href="service7.html" target="content">Baggage Services</a></td></tr>
-                    <tr><td><a href="service8.html" target="content">Online Check-In</a></td></tr>
-                    <tr><td><a href="service9.html" target="content">Meal Options</a></td></tr>
-                    <tr><td><a href="service10.html" target="content">Special Assistance Services</a></td></tr>
-                </table>
-            </td>
-            <td class="iframe-container">
-                <iframe name="content" width="100%" height="100%" >
+            </div>
+            <h1>Explore the World - Your Travel & Tourism Guide</h1>
+        </div>
+        <div class="navigation">
+            <a href="home.html" target="content">Home</a>
+            <a href="login.html" target="content">Login</a>
+            <a href="registration.html" target="content">Registration</a>
+            <a href="catalogue.html" target="content">Catalogue</a>
+            <a href="cart.html" target="content">Cart</a>
+            <a href="contact.html" target="content">Contact Us</a>
+        </div>
+        <div class="content">
+            <div class="services">
+                <a href="service1.html" target="content">Travel Insurance</a>
+                <a href="service2.html" target="content">Car Rentals</a>
+                <a href="service3.html" target="content">Visa Assistance</a>
+                <a href="service4.html" target="content">Holiday Packages</a>
+                <a href="service5.html" target="content">Flight Booking</a>
+                <a href="service6.html" target="content">Hotel Reservations</a>
+                <a href="service7.html" target="content">Baggage Services</a>
+                <a href="service8.html" target="content">Online Check-In</a>
+                <a href="service9.html" target="content">Meal Options</a>
+                <a href="service10.html" target="content">Special Assistance Services</a>
+            </div>
+            <div class="iframe-container">
+                <iframe name="content">
                     <p>Your content will load here.</p>
                 </iframe>
-            </td>
-        </tr>
-    </table>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
-
-
